@@ -1,0 +1,54 @@
+.partnerDesktop{
+    display: block;
+}
+.partnerTablet{
+    display: none;
+}
+.partnerTab{
+    display: none;
+}
+.partnerMobile{
+    display: none;
+}
+@media(max-width:1024px){
+    .partnerDesktop{
+        display: none;
+    }
+    .partnerTablet{
+        display: block;
+    }
+    .partnerTab{
+        display: none;
+    }
+    .partnerMobile{
+        display: none;
+    }   
+}
+@media(max-width:800px){
+    .partnerDesktop{
+        display: none;
+    }
+    .partnerTablet{
+        display: none;
+    }
+    .partnerTab{
+        display: block;
+    }
+    .partnerMobile{
+        display: none;
+    }   
+}
+@media(max-width:600px){
+    .partnerDesktop{
+        display: none;
+    }
+    .partnerTablet{
+        display: none;
+    }
+    .partnerTab{
+        display: none;
+    }
+    .partnerMobile{
+        display: block;
+    }   
+}

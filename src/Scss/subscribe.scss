@@ -1,0 +1,200 @@
+$breakpoint-medium: 800px;
+$breakpoint-tab: 600px;
+$breakpoint-small: 360px;
+.subscribemain {
+    width: 100%;
+    .subscribeBackground {
+        width: 100%;
+        height: 100vh;
+        // background-attachment: fixed;
+        // background-color: green;
+        background-size: cover;
+        .subscribeInfo {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            color: white;
+            .subscribep {
+                font-size: 250%;
+                font-weight: 700;
+                width: 50%;
+                margin-top: 15%;
+            }
+            .subscribeInput {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                // justify-content: center;
+                align-items: center;
+                .subscribeField {
+                    height: 100%;
+                    width: 75%;
+                    background-color: white;
+                    border-radius: 50px;
+                    font-size: 110%;
+                    padding-left: 12px;
+                }
+                .subscribeButton {
+                    background-color: orangered;
+                    color: white;
+                    height: 40px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint-medium) {
+    .subscribemain {
+        width: 100%;
+        .subscribeBackground {
+            width: 100%;
+            height: 100vh;
+            // background-attachment: fixed;
+            // background-color: green;
+            background-size: cover;
+            .subscribeInfo {
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                color: white;
+                .subscribep {
+                    font-size: 150%;
+                    font-weight: 700;
+                    width: 50%;
+                    margin-top: 15%;
+                }
+                .subscribeInput {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    // justify-content: center;
+                    align-items: center;
+                    .subscribeField {
+                        height: 100%;
+                        width: 75%;
+                        background-color: white;
+                        border-radius: 50px;
+                        font-size: 110%;
+                        padding-left: 12px;
+                    }
+                    .subscribeButton {
+                        background-color: orangered;
+                        color: white;
+                        height: 40px;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint-tab) {
+    .subscribemain {
+        width: 100%;
+        .subscribeBackground {
+            width: 100%;
+            height: 100vh;
+            // background-attachment: fixed;
+            // background-color: green;
+            background-size: cover;
+            .subscribeInfo {
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                color: white;
+                .subscribep {
+                    font-size: 150%;
+                    font-weight: 700;
+                    width: 70%;
+                    margin-top: 15%;
+                }
+                .subscribeInput {
+                    width: 70%;
+                    display: flex;
+                    flex-direction: row;
+                    // justify-content: center;
+                    align-items: center;
+                    .subscribeField {
+                        height: 100%;
+                        width: 75%;
+                        background-color: white;
+                        border-radius: 50px;
+                        font-size: 100%;
+                        padding-left: 12px;
+                    }
+                    .subscribeButton {
+                        background-color: orangered;
+                        color: white;
+                        height: 30px;
+                        border-radius: 50px;
+                        font-size: 75%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint-small) {
+    .subscribemain {
+        width: 100%;
+        .subscribeBackground {
+            width: 100%;
+            height: 100vh;
+            // background-attachment: fixed;
+            // background-color: green;
+            background-size: cover;
+            .subscribeInfo {
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                color: white;
+                .subscribep {
+                    font-size: 100%;
+                    font-weight: 700;
+                    width: 70%;
+                    margin-top: 15%;
+                }
+                .subscribeInput {
+                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    .subscribeField {
+                        height: 130%;
+                        width: 75%;
+                        background-color: white;
+                        border-radius: 50px;
+                        font-size: 50%;
+                        padding-left: 12px;
+                    }
+                    .subscribeButton {
+                        background-color: orangered;
+                        color: white;
+                        height: 50px;
+                        width: 30px;
+                        border-radius: 50px;
+                        font-size: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

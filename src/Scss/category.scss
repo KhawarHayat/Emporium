@@ -1,0 +1,169 @@
+$img_height: 400px;
+$img_width: 600px;
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 600px;
+$breakpoint-small: 360px;
+.categorymain {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .img_background {
+        height: $img_height;
+        width: $img_width;
+        background-size: cover;
+        background-position: center;
+        animation: zoomout 1s;
+        .info {
+            margin: 0%;
+            padding: 0%;
+            height: $img_height;
+            width: $img_width;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 150%;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.img_background:hover {
+    animation: zoomin 1s;
+}
+
+@keyframes zoomin {
+    0% {
+        background-size: 100% 100%;
+    }
+    100% {
+        background-size: 120% 120%;
+    }
+}
+@keyframes zoomout {
+    0% {
+        background-size: 120% 120%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    $img_height: 200px;
+    $img_width: 300px;
+    .categorymain {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .img_background {
+            height: $img_height;
+            width: $img_width;
+            background-size: cover;
+            background-position: center;
+            animation: zoomout 1s;
+            .info {
+                margin: 0%;
+                padding: 0%;
+                height: $img_height;
+                width: $img_width;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                font-size: 150%;
+                font-weight: 500;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .img_background:hover {
+        animation: zoomin 1s;
+    }
+}
+@media (max-width: $breakpoint-mobile) {
+    $img_height: 300px;
+    $img_width: 400px;
+    .categorymain {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .img_background {
+            height: $img_height;
+            width: $img_width;
+            background-size: cover;
+            background-position: center;
+            animation: zoomout 1s;
+            margin-top: 2%;
+            .info {
+                margin: 0%;
+                padding: 0%;
+                height: $img_height;
+                width: $img_width;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                font-size: 150%;
+                font-weight: 500;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .img_background:hover {
+        animation: zoomin 1s;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    $img_height: 200px;
+    $img_width: 300px;
+    .categorymain {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .img_background {
+            height: $img_height;
+            width: $img_width;
+            background-size: cover;
+            background-position: center;
+            animation: zoomout 1s;
+            .info {
+                margin: 0%;
+                padding: 0%;
+                height: $img_height;
+                width: $img_width;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                font-size: 150%;
+                font-weight: 500;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .img_background:hover {
+        animation: zoomin 1s;
+    }
+}
