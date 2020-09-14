@@ -7,18 +7,18 @@ import { connect } from 'react-redux'
 import { fetchItems, clickCategory, addCart } from '../Redux/shop/shopAction';
 class Sales extends Component {
     componentDidMount() {
-            this.props.fetchItems(this.props.breadCrumb)
+        this.props.fetchItems(this.props.breadCrumb)
     }
     render() {
         const list = this.props.items.map((item) => {
-            return <ItemCard id={item.productId} src={item.productElements.image.imgUrl} name={item.productElements.title.title.substring(0, 20)} category={this.props.breadCrumb} price={item.productElements.price.sell_price.formatedAmount} onClick={() => {this.props.addCart(item.productId)}}/>
+            return <ItemCard id={item.productId} src={item.productElements.image.imgUrl} name={item.productElements.title.title.substring(0, 20)} category={this.props.breadCrumb} price={item.productElements.price.sell_price.formatedAmount} onClick={() => { this.props.addCart(item.productId) }} />
         })
         let error = <></>
-        if(this.props.error === ''){
+        if (this.props.error === '') {
             error = <></>
         }
-        else{
-           error =  <Error error={this.props.error} />
+        else {
+            error = <Error error={this.props.error} />
         }
         return (
             <div className='salemain' id={this.props.id}>
@@ -28,25 +28,24 @@ class Sales extends Component {
                     <Chip
                         label="Accessories"
                         variant="outlined"
-                        size='large'
                         color="secondary"
                         clickable
-                        onClick={() => {this.props.clickCategory("Accessories")}}
+                        onClick={() => { this.props.clickCategory("Accessories") }}
                     />
                     <Chip
                         label="Clothings"
                         // onClick={handleClick}
                         variant="outlined"
-                        size='large'
+
                         color="secondary"
                         clickable
-                        onClick={() => {this.props.clickCategory('Clothes')}}
+                        onClick={() => { this.props.clickCategory('Clothes') }}
                     />
                     <Chip
                         label="Shirts"
                         // onClick={handleClick}
                         variant="outlined"
-                        size='large'
+
                         color="secondary"
                         clickable
                         onClick={() => this.props.clickCategory("Shirts")}
@@ -55,7 +54,7 @@ class Sales extends Component {
                         label="Shoes"
                         // onClick={handleClick}
                         variant="outlined"
-                        size='large'
+
                         color="secondary"
                         clickable
                         onClick={() => this.props.clickCategory('Shoes')}
@@ -64,7 +63,7 @@ class Sales extends Component {
                         label="Shorts"
                         // onClick={handleClick}
                         variant="outlined"
-                        size='large'
+
                         color="secondary"
                         clickable
                         onClick={() => this.props.clickCategory('Shorts')}
@@ -72,7 +71,7 @@ class Sales extends Component {
                 </div>
                 <div className='saleItems'>
                     {error}
-                   {list}
+                    {list}
                 </div>
             </div>
         );
@@ -95,4 +94,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(Sales);
+export default connect(mapStateToProps, mapDispatchToProps)(Sales);

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardActionArea, CardMedia, Typography, CardContent } from '@material-ui/core'
+import { Card, CardActionArea, CardMedia } from '@material-ui/core'
 import { FaShoppingCart } from 'react-icons/fa'
 import '../Scss/card.scss'
 class ItemCard extends Component {

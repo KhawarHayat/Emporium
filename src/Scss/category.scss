@@ -18,6 +18,7 @@ $breakpoint-small: 360px;
         background-size: cover;
         background-position: center;
         animation: zoomout 1s;
+        animation-fill-mode: forwards;
         .info {
             margin: 0%;
             padding: 0%;
@@ -35,6 +36,7 @@ $breakpoint-small: 360px;
 }
 .img_background:hover {
     animation: zoomin 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes zoomin {

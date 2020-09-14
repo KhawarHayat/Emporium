@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import ThemePage from './ThemePage';
 import MyApp from './MyApp';
 class Routes extends Component {

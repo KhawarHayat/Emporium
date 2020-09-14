@@ -15,12 +15,12 @@ class Header extends Component {
         let hammenu;
         if (this.props.menuOpen) {
             hammenu = <div className={style.hammenu}>
-                <AnchorLink offset={10} animationDuration={1000} href='#Home' className={style.a}>Home</AnchorLink>
-                <AnchorLink offset={10} animationDuration={1000} href='#Category' className={style.a}>Categories</AnchorLink>
-                <AnchorLink offset={10} animationDuration={1000} href='#Products' className={style.a}>Products</AnchorLink>
-                <AnchorLink offset={10} animationDuration={1000} href='#Subscribe' className={style.a}>Subscribe</AnchorLink>
-                <AnchorLink offset={0} animationDuration={2000} href='#Partner' className={style.a}>Partner</AnchorLink>
-                <a onClick={this.props.redirected} className={style.a}>Shop</a>
+                <AnchorLink offset={10} animationduration={1000} href='#Home' className={style.a}>Home</AnchorLink>
+                <AnchorLink offset={10} animationduration={1000} href='#Category' className={style.a}>Categories</AnchorLink>
+                <AnchorLink offset={10} animationduration={1000} href='#Products' className={style.a}>Products</AnchorLink>
+                <AnchorLink offset={10} animationduration={1000} href='#Subscribe' className={style.a}>Subscribe</AnchorLink>
+                <AnchorLink offset={0} animationduration={2000} href='#Partner' className={style.a}>Partner</AnchorLink>
+                <a onClick={this.props.redirected} className={style.a} href=''>Shop</a>
             </div>
         }
         else {
@@ -81,7 +81,7 @@ class Header extends Component {
                         rotate={0}
                         color='gray'
                         borderRadius={0}
-                        animationDuration={0.5}
+                        animationduration={0.5}
                     />
                     {hammenu}
                     <Badge
@@ -95,12 +95,12 @@ class Header extends Component {
                 </div>
 
                 <div className={style.menu}>
-                    <AnchorLink offset={10} animationDuration={1000} href='#Home' className={style.a}>Home</AnchorLink>
-                    <AnchorLink offset={10} animationDuration={1000} href='#Category' className={style.a}>Categories</AnchorLink>
-                    <AnchorLink offset={10} animationDuration={1000} href='#Products' className={style.a}>Products</AnchorLink>
-                    <AnchorLink offset={10} animationDuration={1000} href='#Subscribe' className={style.a}>Subscribe</AnchorLink>
-                    <AnchorLink offset={0} animationDuration={2000} href='#Partner' className={style.a}>Partner</AnchorLink>
-                    <a onClick={this.props.redirected} className={style.a}>Shop</a>
+                    <AnchorLink offset={10} animationduration={1000} href='#Home' className={style.a}>Home</AnchorLink>
+                    <AnchorLink offset={10} animationduration={1000} href='#Category' className={style.a}>Categories</AnchorLink>
+                    <AnchorLink offset={10} animationduration={1000} href='#Products' className={style.a}>Products</AnchorLink>
+                    <AnchorLink offset={10} animationduration={1000} href='#Subscribe' className={style.a}>Subscribe</AnchorLink>
+                    <AnchorLink offset={0} animationduration={2000} href='#Partner' className={style.a}>Partner</AnchorLink>
+                    <a onClick={this.props.redirected} className={style.a} href=''>Shop</a>
                 </div>
                 <Divider className={style.divider} orientation="vertical" flexItem />
                 {searchFeild}
